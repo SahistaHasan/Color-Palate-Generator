@@ -19,7 +19,8 @@ let btn=document.querySelector("button");
 btn.onclick = () =>{
 for(j=0;j<5;j++){
    avar[j].replaceChildren();
-   avar2[j].replaceChildren();
+   avar2[j].replaceChildren();  //Children is used since avar2[j] is an elementnode and not other nodes. If it is some other node then we can use replaceChild().
+                                //Elements have children while node have child.Element node are the spefic HTML tag used in HTML.
 }
 
 for(i=0;i<avar.length;i++){
